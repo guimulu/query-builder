@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "types": ["cypress", "node"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src/client",
+    "paths": {
+      "@features/*": ["./features/*"],
+      "@components/*": ["./components/*"],
+      "@schemas/*": ["./schemas/*"],
+      "@utils/*": ["./utils/*"],
+      "@styles/*": ["./styles/*"],
+      "@assets/*": ["./assets/*"]
+    }
+  },
+  "include": [
+    "src/client/**/*",
+    "vite.config.ts",
+    "src/fela-plugin-responsive-value.d.ts",
+    "cypress"
+  ]
+}
